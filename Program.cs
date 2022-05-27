@@ -10,16 +10,15 @@ A = Convert.ToInt32(Console.ReadLine()!);
 Console.Write("Escreva o divisor: ");
 B = Convert.ToInt32(Console.ReadLine()!);
 
-R = A % B;
-Console.Write($"Resto = {R}");
 
 while (B != 0)
 
 {
+R = A % B;
 A = B;
 B = R;
 }
-return A;
+
 
 
 Console.WriteLine($"MDC(A,B)= {A}");
